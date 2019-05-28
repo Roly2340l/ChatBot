@@ -3,14 +3,12 @@
   <head>
     <title>Bender Bot</title>
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.js"></script> 
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no, user-scalable=no">
-    <script src="js/script.js"></script>
-    <>
   </head>
-  <body >
+  <body>
       <div class="Top">
         <center><br>
     	     <img class="centrado" id="titulobot" src="images/Portada.jpg" alt="Titulo">
@@ -68,7 +66,6 @@
 	  <div align="center">
 	    <input type="text" name="msg" placeholder="Dile algo a Bender" autofocus/ id="chat" onclick="enviar()">
 	    <input type="submit" onclick="enviar()"/>
-	    <>
 	  </div>
 	  <div align="center">
 	    <br><br>
@@ -99,5 +96,3 @@
       </div>
   </body>
 </html>
-<!--GUARDAR COMO PHP Y EJECUTAR DESDE localhost-->
-<script> document.getElementById("text").scrollTop=9999; </script>

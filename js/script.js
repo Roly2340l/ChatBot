@@ -7,7 +7,7 @@ function Send(){
           url: frm.attr('action'),
           data: frm.serialize(),
           success: function (data) {
-              console.log("Success!!");
+              console.log(data);
               $("#chat_box").text(data);
               $("#chat").val('');
               $("#chat_box").animate({ scrollTop: $("#chat_box")[0].scrollHeight }, 1000);

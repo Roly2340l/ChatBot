@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <img class="centrado" id="titulo" src="images/bender.gif" alt="Titulo">
-  <script src="js/bootstrap.js"></script> 
+  <script src="js/bootstrap.js"></script>
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery-3.3.1.min.js"></script>
   <meta charset="utf-8">
@@ -14,7 +14,6 @@
       <buttom id="boton" class="centrado" onclick="window.location.href = 'bot.php';" > <center> Platica conmigo! </center> </buttom>
     </div>
   </div>
-  <!-- <img class="centrado" id="imagen" src="robotsin.jpg" alt="Robotsin"> -->
 </body>
 
 </html>

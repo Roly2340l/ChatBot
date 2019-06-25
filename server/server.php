@@ -1,19 +1,11 @@
-<html>
-<head>
-  <script type="text/javascript">
-    window.onload = function () {
-      document.getElementById('ans').Submit1.click();
-    }
-  </script>
-</head>
-<body background = "../images/space.jpg">
 <?php
-if(isset($_POST["msg"])==false) $_POST["msg"]='';
-if(isset($_POST["area"])==false) $_POST["area"]='';
+if(!isset($_POST["area"])) $_POST["area"]='';
+if(!isset($_POST["msg"])) $_POST["msg"]='';
 $msg = $_POST["msg"];
 $area = $_POST["area"];
 $rpta = "";
 $user = "Admin";
+$tmp = strtolower($msg);
 $saludos = array("hola","hi","hola","hello");
 $ofensas = array("inutil","me llegas","eres un");
 $estado = array("como estas","que tal","como te va");
@@ -31,9 +23,9 @@ if($msg){
   mysqli_query($connect,"INSERT INTO conversations VALUES('$lastID','$user',CURRENT_TIME(),'$msg')");
 }
 
-function Test($msg,$arreglo){
+function Test($tmp,$arreglo){
   foreach($arreglo as $item){
-    if(strpos($msg,$item) !== false) return true;
+    if(strpos($tmp,$item) !== false) return true;
   }
   return false;
 }
@@ -44,24 +36,18 @@ function aleatorio($list){
 }
 
 function write($msg,$area,$rpta){
-    $tex = $area."Tu: ".$msg."\n\t    Bender: ".$rpta."\n\n";
+    $tex = $area."\n\tTu:  ".$msg."\n\tBender:  ".$rpta."\n";
     return $tex;
 }
 
-if(Test($msg,$saludos)) $rpta = aleatorio($saludos).$nombre;
-else if(Test($msg,$estado)) $rpta = aleatorio($estadoBot);
-else if(Test($msg,$estadoBot)) $rpta = "Por que??";
-else if(Test($msg,$causa)) $rpta = aleatorio($consecuencia);
-else if(Test($msg,$ofensas)) $rpta = "Se mas educado";
-else if(Test($msg,$tema)) $rpta= "Es lo que hace tu profe Atencio";
+if(Test($tmp,$saludos)) $rpta = aleatorio($saludos).$nombre;
+else if(Test($tmp,$estado)) $rpta = aleatorio($estadoBot);
+else if(Test($tmp,$estadoBot)) $rpta = "Por que??";
+else if(Test($tmp,$causa)) $rpta = aleatorio($consecuencia);
+else if(Test($tmp,$ofensas)) $rpta = "Se mas educado";
+else if(Test($tmp,$tema)) $rpta= "Es lo que hace tu profe Atencio";
 else $rpta = aleatorio($mantener);
 
+if($msg) echo write($msg,$area,$rpta);
+else echo $area;
 ?>
-<div class="Main" align="center">
-  <form id='ans' action='../bot.php' method="post">
-      <textarea name="rpta"><?php echo write($msg,$area,$rpta); ?></textarea>
-      <input name="Submit1" type="submit" value="submit" />
-  </form>
-</div>
-</body>
-</html>

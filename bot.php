@@ -15,19 +15,17 @@
       </div>
       <div class="Main">
         <br>
-	<form name="f1" action='server/server.php' method='post'>
-	  <div align="center">
-	    <input type="text" name="msg" placeholder="Dile algo a Bender" autofocus id="chat">
-	    <input type="submit" onclick="enviar()"/>
-	  </div>
-	  <div align="center">
-	    <br><br>
-	    <textarea id="chat_box" name="area" rows="20" cols="100" >
-	      <?php if($_POST['rpta']) {echo $_POST['rpta'];}
-        else {echo "\n";}?>
-	    </textarea>
-	  </div>
-	</form>
+      	<form id="FF" action='server/server.php' method='post'>
+      	  <div align="center">
+      	    <input id="chat" type="text" name="msg" placeholder="Dile algo a Bender" autofocus/>
+      	    <input type="submit" value="Enviar"/>
+      	  </div>
+      	  <div align="center">
+      	    <br><br>
+      	    <textarea id="chat_box" name="area" rows="20" cols="100" readonly></textarea>
+      	  </div>
+          <script>Send()</script>
+      	</form>
       </div>
   </body>
 </html>

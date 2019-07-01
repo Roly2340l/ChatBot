@@ -1,5 +1,5 @@
 <?php
-require_once "configuracion.php";
+require_once "server/configuracion.php";
 
 $username = $password = $confirm_password = "";
 $error_username = $error_password = $confirm_error_password = "";
@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         }
 
-        mysqli_stmt_close($stmt);
+        //mysqli_stmt_close($stmt);
     }
 
     //VALIDAR CONTRASEÑA
@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         }
 
-        mysqli_stmt_close($stmt);
+        //mysqli_stmt_close($stmt);
     }
 
     mysqli_close($link);

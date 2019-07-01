@@ -1,4 +1,6 @@
 <?php
+require_once "configuracion.php";
+
 if(!isset($_POST["area"])) $_POST["area"]='';
 if(!isset($_POST["msg"])) $_POST["msg"]='';
 $msg = $_POST["msg"];
@@ -17,12 +19,10 @@ $tema = array("que es html", "que es desarrollo web","que es perder el tiempo");
 $clima = array("clima","temperatura");
 $cities = array("arequipa","londres","miami","tokio","brasilia","alaska");
 
-$connect = mysqli_connect('127.0.0.1', 'root', 'bender') or die("No se puede conectar a tu host");
-mysqli_select_db($connect,'chatbot') or die("No se pudo acceder a la database");
-$result = mysqli_query($connect, "SELECT ID FROM conversations ORDER BY ID DESC LIMIT 1");
+$result = mysqli_query($link, "SELECT ID FROM conversations ORDER BY ID DESC LIMIT 1");
 $lastID = mysqli_fetch_array($result, MYSQLI_NUM)[0] + 1;
 if($msg){
-  mysqli_query($connect,"INSERT INTO conversations VALUES('$lastID','$user',CURRENT_TIME(),'$msg')");
+  mysqli_query($link,"INSERT INTO conversations VALUES('$lastID','$user',CURRENT_TIME(),'$msg')");
 }
 
 function GetWeather($message,$arreglo){

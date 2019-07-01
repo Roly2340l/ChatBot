@@ -1,5 +1,5 @@
 <?php
-require_once "configuracion.php";
+require_once "server/configuracion.php";
 
 $username = $password = "";
 $username_err = $error_password = "";
@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         }
 
-        mysqli_stmt_close($stmt);
+        //mysqli_stmt_close($stmt);
     }
 
     mysqli_close($link);

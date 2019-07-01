@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
 
-                            header("location: index.html");
+                            header("location: index.php");
                         } else {
                             $error_password = "La contraseña es invalida";
                         }

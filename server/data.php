@@ -4,17 +4,16 @@
   $saludos = array("hola","hi","hola","hello");
   $ofensas = array("inutil","me llegas","eres un");
   $estado = array("como estas","que tal","como te va");
-  $causa = array("por","why");
-  $consecuencia = array("por que asi es la vida", "no lo se rick","por que me dejo mi novia");
-  $estadoBot = array("bien","mal","Sad");
-  $mantener = array("y.. cuentame algo","Como te va","eeen fin..","No entiendo");
-  $tema = array("que es","what is","como puedo","que deberia","podrias");
+  $causa = array("por que","why");
+  $consecuencia = array("Por que asi es la vida!", "");
+  $estadoBot = array("bien! :D","excelente!","No puedo quejarme");
+  $mantener = array("en fin.. dime en que te puedo ayudar","interesante","Parece que no te entiendo :c");
+  $tema = array("que es","what is","como puedo","que deberia","podrias","recomiendas","como funciona");
   $clima = array("clima","temperatura");
   $cities = array("arequipa","londres","miami","tokio","brasilia","alaska","puno","cuzco");
   $hora = array("hora es", "hora","time");
   $TopicsJson = file_get_contents('topics.json');
   $topics = json_decode("$TopicsJson",true);
-
 
   //Funciones!!
   function GiveHelp($msg,$dict){

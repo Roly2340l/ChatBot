@@ -19,24 +19,30 @@ if($msg){
 }
 
 //Main
-if(Test($tmp,$saludos))
+if(Test($tmp,$saludos)){
   $rpta = aleatorio($saludos) . " " . $user;
-else if(Test($tmp,$estado))
+}
+else if(Test($tmp,$estado)){
   $rpta = aleatorio($estadoBot);
-else if(Test($tmp,$estadoBot))
-  $rpta = "Por que??";
-else if(Test($tmp,$causa))
+}
+else if(Test($tmp,$causa)){
   $rpta = aleatorio($consecuencia);
-else if(Test($tmp,$ofensas))
-  $rpta = "Se mas educado";
-else if(Test($tmp,$tema))
+}
+else if(Test($tmp,$ofensas)){
+  $rpta = "Creo que deberias ser mas educado";
+}
+else if(Test($tmp,$tema)){
   $rpta= GiveHelp($tmp,$topics);
-else if(Test($tmp,$clima))
+}
+else if(Test($tmp,$clima)){
   $rpta = GetWeather($tmp,$cities);
-else if(Test($tmp,$hora))
+}
+else if(Test($tmp,$hora)){
   $rpta = "Son las " . date('H:i:s') . " en tu ciudad";
+}
 else $rpta = aleatorio($mantener);
 
+//Devolver respuesta
 $rpta = ucfirst($rpta);
 if($msg) echo $area . "\nTu:  " . $msg . "\nBender:  " . $rpta . "\n";
 else echo $area;

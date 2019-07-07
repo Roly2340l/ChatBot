@@ -1,0 +1,22 @@
+[
+  {
+    "name": "html",
+    "descrption" : "HTML es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet",
+    "link" : "https://www.w3schools.com/html/"
+  },
+  {
+    "name" : "css",
+    "descrption" : "CSS es un lenguaje de hojas de estilos creado para controlar el aspecto o presentación de los documentos electrónicos",
+    "link" : "https://www.w3schools.com/css/"
+  },
+  {
+    "name" : "ionic",
+    "descrption" : " Ionic es un framework para el desarrollo de aplicaciones híbridas",
+    "link": "https://ionicframework.com/docs"
+  },
+  {
+    "name" : "crear una pagina",
+    "descrption" : "Aprender programacion web, es de vital importancia aprender bien desde el principio c: ",
+    "link": "https://www.w3schools.com"
+  }
+]

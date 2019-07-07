@@ -41,18 +41,20 @@ textarea{
 }
 
 #chat_box {
-  width: 700px;
+  width: 750px;
   height: 350px;
   background: rgb(255, 255, 255);
-  padding: 0px 20px;
+  padding: 0px 30px;
   margin: 20px auto;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 5%;
+  border-color: gray;
+  border-width: thick;
   overflow-x: hidden;
   overflow-y: scroll;
 }
 
-#chat_bot {
+#chat_bot{
   background: rgb(255, 255, 255);
 }
 

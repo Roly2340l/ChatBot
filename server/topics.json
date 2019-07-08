@@ -18,5 +18,16 @@
     "name" : "crear una pagina",
     "descrption" : "Aprender programacion web, es de vital importancia aprender bien desde el principio c: ",
     "link": "https://www.w3schools.com"
+  },
+  {
+    "name" : "ser mejor desarrollador web",
+    "descrption" : "Pues primero deberias estudiar HTML, te recomiendo esta pagina, a mi me ayudo c:",
+    "link": "https://www.w3schools.com/html/"
+  },
+  {
+    "name" : "mejorar",
+    "descrption" : "Practicando, hay muchas formas, y tambien debes seguir tutoriales, hay videos en youtube y demás, igualmente te recomiendo esta pagina, son tutoriales basicos para hay otros mejores",
+    "link": "https://www.w3schools.com/"
   }
+  
 ]

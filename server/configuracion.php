@@ -1,7 +1,7 @@
 <?php
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'Rolinson'); //El usuario mysql
-define('DB_PASSWORD', 'LA CONTRA PS JOACO =V'); //La contraseña, si es que tiene
+define('DB_PASSWORD', 'lvnecuq23052001'); //La contraseña, si es que tiene
 define('DB_NAME', 'ChatBot'); //EL nombre de la base de datos
 
 /* Attempt to connect to MySQL database */

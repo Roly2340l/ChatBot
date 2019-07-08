@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(106, 221, 246);
+  /* background-color: rgb(106, 221, 246); */
   background-image: url("../images/space.jpg");
 }
 
@@ -10,8 +10,29 @@ h1 {
   text-align: center;
 }
 
-textarea{
+textarea {
   resize: none;
+}
+
+#bar {
+  background-color: rgb(202, 202, 202);
+  width: 150px;
+  height: 40px;
+  border-radius: 10%;
+  font-size: 30px;
+  font-family: courier;
+  text-align: center;
+  float: right
+}
+
+#topbar {
+  background-color: rgb(255, 255, 255);
+  width: 150px;
+  height: 110px;
+  border-radius: 10%;
+  font-size: 30px;
+  font-family: courier;
+  text-align: center;
 }
 
 .centrado {
@@ -42,7 +63,7 @@ textarea{
 
 #chat_box {
   width: 750px;
-  height: 350px;
+  height: 400px;
   background: rgb(255, 255, 255);
   padding: 0px 30px;
   margin: 20px auto;
@@ -54,32 +75,45 @@ textarea{
   overflow-y: scroll;
 }
 
-#chat_bot{
+#caja {
+  width: 750px;
+  height: 430px;
+  background: rgb(255, 255, 255);
+  padding: 0px 30px;
+  margin: 20px auto;
+  font-size: 28px;
+  border-radius: 5%;
+  border-color: gray;
+  border-width: thick;
+  overflow-x: hidden;
+}
+
+#chat_bot {
   background: rgb(255, 255, 255);
 }
 
-input{
-    width: 80px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 17px;
-    background-color: white;
-    padding: 10px 10px 10px 10px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+input {
+  width: 80px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 17px;
+  background-color: white;
+  padding: 10px 10px 10px 10px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
 }
 
-#chat{
-    width: 20%;
+#chat {
+  width: 20%;
 }
 #chat:focus {
-    width: 40%;
+  width: 40%;
 }
 
 #boton {
-  height: 40px;
-  width: 300px;
-  font-size: 25px;
+  height: 75px;
+  width: 400px;
+  font-size: 50px;
   color: white;
   background: black;
   border-color: rgb(0, 135, 224);

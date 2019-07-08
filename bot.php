@@ -1,3 +1,7 @@
+<?php
+session_start();
+if($_SESSION['loggedin']==false) header("location:index.php");
+?>
 <html>
 
 <head>
@@ -11,7 +15,7 @@
 
 <body>
   <div id="topbar">
-    <textarea id="bar" name="user" form="FF" readonly>Joaquin </textarea> <a href="index.php">Salir sesión</a> 
+    <textarea id="bar" name="user" form="FF" readonly><?php echo $_SESSION['username'] ?> </textarea> <a href="index.php">Salir sesión</a>
   </div>
   <div class="Top">
     <center><br>

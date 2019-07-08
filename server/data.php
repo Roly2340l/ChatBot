@@ -1,4 +1,5 @@
 <?php
+
 //DATA (arreglos)
 $saludos = array("hola", "hi", "hello");
 $ofensas = array("inutil", "me llegas", "tonto", "idiota", "mierda", "asqueroso", "imbecil", "cabro", "webon", "maricon", "marica", "pinche", " cagon", "gil", "gilazo");
@@ -27,7 +28,7 @@ $estado_hacer_rpta = array("Hablando contigo", "Nada interesante");
 $causa = array("por que", "por que?", "¿por que?", "why");
 $consecuencia = array("Por que asi es la vida!", "");
 $estadoBot = array("bien! :D", "excelente!", "No puedo quejarme");
-$mantener = array("Parece que no te entiendo :c", "en fin.. dime en que te puedo ayudar", "interesante..., no entiendo =v", "Ah bueno", "Vale... :v", "Fingire que te entendi =v");
+$mantener = array("en fin.. dime en que te puedo ayudar", "interesante", "Parece que no te entiendo :c", "Ah bueno", "Vale... :v", "Fingire que te entendi =v");
 $tema = array("que es", "what is", "como puedo", "que deberia", "podrias", "recomiendas", "como funciona", "quiero aprender", "aprender", "quiero", "mejorar");
 $clima = array("clima", "temperatura");
 $cities = array("arequipa", "nueva york", "los angeles", "seul", "paris", "osaka", "shanghai", "chicago", "sao paulo", "houston", "colonia", "pekin", "washington d.c", "canton", "ciudad de mexico", "singapur", "buenos aires", "milan", "toronto", "rio de janeiro", "san diego", "londres", "miami", "tokio", "brasilia", "alaska", "puno", "cuzco");

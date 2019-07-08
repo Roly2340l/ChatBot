@@ -1,7 +1,9 @@
 <?php
 require_once "server/configuracion.php";
 
-$username = $password = "";
+session_start();
+$_SESSION["loggedin"] = false;
+$username = $password = $code = "";
 $username_err = $error_password = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -30,16 +32,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 mysqli_stmt_store_result($stmt);
 
                 if (mysqli_stmt_num_rows($stmt) == 1) {
+
+                  $tmp = mysqli_query($link, "SELECT code FROM codes WHERE username = '$username'");
+                  $code = mysqli_fetch_array($tmp)['code'];
+
                     mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
                     if (mysqli_stmt_fetch($stmt)) {
                         if (password_verify($password, $hashed_password)) {
-                            session_start();
-
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
-                            
-                            header("location: historia.html");
+                            $_SESSION["code"] = $code;
+                            header("location: historia.php");
                         } else {
                             $error_password = "La contraseña es invalida";
                         }
@@ -54,11 +58,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         //mysqli_stmt_close($stmt);
     }
+
     mysqli_close($link);
 }
 ?>
 
-<!DOCTYPE html>
 <html lang="en">
 
 <head>

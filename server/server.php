@@ -1,14 +1,14 @@
 <?php
+session_start();
 require_once "configuracion.php";
 include 'data.php';
-include 'index.php';
 
 // datos del post
 if (!isset($_POST["area"])) $_POST["area"] = '';
 if (!isset($_POST["msg"])) $_POST["msg"] = '';
 $msg = $_POST["msg"];
 $area = $_POST["area"];
-$user = $_POST["user"];
+$user = $_SESSION["username"];
 $rpta = "";
 $tmp = strtolower($msg);
 

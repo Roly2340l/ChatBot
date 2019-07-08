@@ -28,35 +28,6 @@
     "name" : "mejorar",
     "descrption" : "Practicando, hay muchas formas, y tambien debes seguir tutoriales, hay videos en youtube y demás, igualmente te recomiendo esta pagina, son tutoriales basicos para hay otros mejores",
     "link": "https://www.w3schools.com/"
-  },
-  {
-    "name" : "php",
-    "descrption" : "Es un lenguaje de programación de propósito general de código del lado del servidor originalmente diseñado para el preprocesado de texto plano en UTF-8",
-    "link": "https://www.w3schools.com/php/"
-  },
-  {
-    "name" : "ajax",
-    "descrption" : "AJAX, acrónimo de Asynchronous JavaScript And XML, es una técnica de desarrollo web para crear aplicaciones interactivas o RIA.",
-    "link": "https://www.w3schools.com/php/"
-  },
-  {
-    "name" : "bootstrap",
-    "descrption" : "Bootstrap es una biblioteca multiplataforma o conjunto de herramientas de código abierto para diseño de sitios y aplicaciones web.",
-    "link": "https://www.w3schools.com/bootstrap4/"
-  },
-  {
-    "name" : "web",
-    "descrption" : "Una página web, o página electrónica, página digital, o ciberpágina​​ es un documento o información electrónica capaz de contener texto, sonido, vídeo, programas, enlaces, imágenes y muchas otras cosas, adaptada para la llamada World Wide Web y que puede ser accedida mediante un navegador web.",
-    "link": "https://okhosting.com/blog/que-es-web/"
-  },
-  {
-    "name" : "xml",
-    "descrption" : "XML, siglas en inglés de eXtensible Markup Language, traducido como \"Lenguaje de Marcado Extensible\" o \"Lenguaje de Marcas Extensible\", es un meta-lenguaje que permite definir lenguajes de marcas desarrollado por el World Wide Web Consortium utilizado para almacenar datos en forma legible.",
-    "link": "https://www.w3schools.com/xml/"
-  },
-  {
-    "name" : "jquery",
-    "descrption" : "jQuery es una biblioteca multiplataforma de JavaScript, creada inicialmente por John Resig, que permite simplificar la manera de interactuar con los documentos HTML, manipular el árbol DOM, manejar eventos, desarrollar animaciones y agregar interacción con la técnica AJAX a páginas web.​",
-    "link": "https://www.w3schools.com/jquery/"
   }
+  
 ]

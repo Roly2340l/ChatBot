@@ -61,6 +61,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($stmt = mysqli_prepare($link, $sql)) {
             mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
 
+            $code = "B"; for($i=0; $i<7; $i++) {$code = $code . rand(0,9);}
+            mysqli_query($link, "INSERT INTO codes VALUES('$username','$code')");
+
             $param_username = $username;
             $param_password = password_hash($password, PASSWORD_DEFAULT);
 

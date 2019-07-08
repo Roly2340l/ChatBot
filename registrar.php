@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty(trim($_POST["username"]))) {
         $error_username = "Por favor ingrese su nombre de usuario";
     } else {
-        //PREPARAR LA SELECCIO DEL NOMBRE
+        //PREPARAR LA SELECCION DEL NOMBRE
         $sql = "SELECT id FROM users WHERE username = ?";
 
         if ($stmt = mysqli_prepare($link, $sql)) {
@@ -65,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $param_password = password_hash($password, PASSWORD_DEFAULT);
 
             if (mysqli_stmt_execute($stmt)) {
-                header("location: login.php");
+                header("location: index.php");
             } else {
                 echo "Vaya... tuvimos un problema. Vuelva a intentarlo mas tarde";
             }
@@ -82,28 +82,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="en">
 
 <head>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/system.css">
     <title>Registrarse</title>
     <meta charset="UTF-8">
 </head>
 
 <body>
-    <div class="system-fondo">
-        <h1>Registrarse</h1>
+    <div class="system-fondo2">
+        <div id="titulo2" class="centrado">
+            <h1>Registrarse</h1>
+        </div>
         <p>Por favor ponga sus datos para crear una cuenta</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <form id="log" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="grupo">
-                <label>Nombre de usuario</label>
+                <label>Nombre de usuario: </label>
                 <input type="text" name="username" class="input" value="<?php echo $username; ?>">
                 <span class="grupo has-error"><br><?php echo $error_username; ?></span>
             </div>
             <div class="grupo">
-                <label>Contraseña</label>
+                <label>Contraseña: </label>
                 <input type="password" name="password" class="input" value="<?php echo $password; ?>">
                 <span class="grupo has-error"><br><?php echo $error_password; ?></span>
             </div>
             <div class="grupo">
-                <label>Confirmar Contraseña</label>
+                <label>Confirmar Contraseña: </label>
                 <input type="password" name="confirm_password" class="input" value="<?php echo $confirm_password; ?>">
                 <span class="grupo has-error"><br><?php echo $confirm_error_password; ?></span>
             </div>
@@ -111,7 +115,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="submit" class="inputb bloque" value="Registrarse">
                 <input type="reset" class="inputb bloque" value="Reiniciar">
             </div>
-            <p>¿Usted ya tiene una cuenta? <a href="login.php">Inicie sesión aqui</a>.</p>
+            <p>¿Usted ya tiene una cuenta? <a href="index.php">Inicie sesión aqui</a>.</p>
+            <script>
+                Enter()
+            </script>
         </form>
     </div>
 </body>

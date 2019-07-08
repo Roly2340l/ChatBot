@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
 
-                            header("location: historia.html");
+                            header("location: entrada.php");
                         } else {
                             $error_password = "La contraseña es invalida";
                         }
@@ -63,6 +63,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="en">
 
 <head>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
     <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="css/system.css">
     <meta charset="UTF-8">
@@ -70,23 +72,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
     <div class="system-fondo">
-        <h1>Iniciar Sesión</h1>
+        <div id="titulo" class="centrado">
+            <h1>Iniciar<br>Sesión</h1>
+        </div>
         <p>Por favor ingrese sus datos para ingresar al ChatBot</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <form id="log" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="grupo">
-                <label>Nombre de Usuario</label>
+                <label>Nombre de Usuario: </label>
                 <input type="text" name="username" class="input" value="<?php echo $username; ?>">
-                <span class="grupo has-error"><?php echo $username_err; ?></span>
+                <span class="grupo has-error"><br><?php echo $username_err; ?></span>
             </div>
             <div class="grupo">
-                <label>Contraseña</label>
+                <label>Contraseña: </label>
                 <input type="password" name="password" class="input">
-                <span class="grupo has-error"><?php echo $error_password; ?></span>
+                <span class="grupo has-error"><br><?php echo $error_password; ?></span>
             </div>
             <div align="center">
-                <input type="submit" class="inputc bloque" value="Iniciar Sesion">
+                <input type="submit" class="inputc bloque" value="Iniciar Sesión">
             </div>
             <p>¿No tienes una cuenta? <a href="registrar.php">Registrate aqui</a>.</p>
+            <script>
+                Enter()
+            </script>
         </form>
     </div>
 </body>

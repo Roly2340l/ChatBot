@@ -2,7 +2,10 @@
 
 //DATA (arreglos)
 $saludos = array("hola", "hi", "hello");
-$ofensas = array("inutil", "me llegas", "tonto", "idiota", "mierda", "asqueroso", "imbecil", "cabro", "webon", "maricon", "marica", "pinche", " cagon", "gil", "gilazo");
+$xd = array("mi codigo");
+$despedidas = array("adios", "chau", "hasta");
+$despedidas_rpta = array("Adios causa =v", "Chau", "Hasta mas tarde", "Hasta luego");
+$ofensas = array("inutil", "me llegas", "tonto", "idiota", "mierda", "asqueroso", "imbecil", "cabro", "webon", "maricon", "marica", "pinche", " cagon", "gil", "gilazo", "puto", "puta", "pta");
 $rpta_ofensas = array("Creo que deberias ser mas educado", "Adios entonces ps", "Ya no me hables >:v");
 $estado = array("como estas", "que tal", "como te va", "todo bien", "estas");
 $estado_hacer = array("que haces", "bueno, que haces", "haciendo");
@@ -15,6 +18,7 @@ $preguntas6 = array("que te parecio", "parecio", "gusto");
 $preguntas7 = array("di que me quieres");
 $preguntas8 = array("pasatiempo", "hobbit", "tiempo libre");
 $preguntas9 = array("perdon", "lo siento", "perdonas", "disculpas");
+$preguntas10 = array("gracias");
 $respuestas1 = array("Hablo español", "Digo algunas palabras en ingles para impresionar :'v", "Solo español", "Suelo hablar en español", "Me se muchos idiomas");
 $respuestas2 = array("bastante bien", "horrible, pero no quiero hablar sobre eso =v", "sin quejas");
 $respuestas3 = array("¿Por que?", "¿Todo bien?", "Ah ok =v", "¿Que fue?", "¿Que paso?");
@@ -24,6 +28,7 @@ $respuestas6 = array("Bien", "Mal", "Supongo que bien", "No se =v");
 $respuestas7 = array("Te quiero");
 $respuestas8 = array("Normalmente jugar", "Pues muchas cosas", "No mucho, por ser desarrollador web", "Nada en espeial creo");
 $respuestas9 = array("Esta bien", "Vale, estas disculpado");
+$respuestas10 = array("De nada", "No hay de que", "¿Bueno, de nada? =v");
 $estado_hacer_rpta = array("Hablando contigo", "Nada interesante");
 $causa = array("por que", "por que?", "¿por que?", "why");
 $consecuencia = array("Por que asi es la vida!", "");

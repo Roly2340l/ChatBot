@@ -15,7 +15,7 @@ textarea {
 
 #bar {
   background-color: rgb(202, 202, 202);
-  width: 150px;
+  width: 170px;
   height: 40px;
   border-radius: 10%;
   font-size: 30px;
@@ -26,7 +26,7 @@ textarea {
 
 #topbar {
   background-color: rgb(255, 255, 255);
-  width: 150px;
+  width: 170px;
   height: 110px;
   border-radius: 10%;
   font-size: 30px;

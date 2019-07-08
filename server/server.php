@@ -20,10 +20,12 @@ if ($msg) {
 }
 
 //Main
-if (Test($tmp, $saludos)) {
-  $rpta = aleatorio($saludos) . " " . $user;
-} else if (Test($tmp, $ofensas)) {
+if (Test($tmp, $ofensas)) {
   $rpta = aleatorio($rpta_ofensas);
+} else if (Test($tmp, $saludos)) {
+  $rpta = aleatorio($saludos) . " " . $user;
+} else if (Test($tmp, $despedidas)) {
+  $rpta = aleatorio($despedidas_rpta);
 } else if (Test($tmp, $preguntas1)) {
   $rpta = aleatorio($respuestas1);
 } else if (Test($tmp, $preguntas2)) {
@@ -42,12 +44,16 @@ if (Test($tmp, $saludos)) {
   $rpta = aleatorio($respuestas8);
 } else if (Test($tmp, $preguntas9)) {
   $rpta = aleatorio($respuestas9);
+} else if (Test($tmp, $preguntas10)) {
+  $rpta = aleatorio($respuestas10);
 } else if (Test($tmp, $estado_hacer)) {
   $rpta = aleatorio($estado_hacer_rpta);
 } else if (Test($tmp, $estado)) {
   $rpta = aleatorio($estadoBot);
 } else if (Test($tmp, $causa)) {
   $rpta = aleatorio($consecuencia);
+} else if (Test($tmp, $xd)) {
+  $rpta = $_SESSION['code'];
 } else if (Test($tmp, $tema)) {
   $rpta = GiveHelp($tmp, $topics);
 } else if (Test($tmp, $clima)) {

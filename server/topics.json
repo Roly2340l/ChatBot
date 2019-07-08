@@ -53,5 +53,10 @@
     "name" : "xml",
     "descrption" : "XML, siglas en inglés de eXtensible Markup Language, traducido como \"Lenguaje de Marcado Extensible\" o \"Lenguaje de Marcas Extensible\", es un meta-lenguaje que permite definir lenguajes de marcas desarrollado por el World Wide Web Consortium utilizado para almacenar datos en forma legible.",
     "link": "https://www.w3schools.com/xml/"
+  },
+  {
+    "name" : "php",
+    "descrption" : "PHP, acrónimo recursivo en inglés de PHP: Hypertext Preprocessor, es un lenguaje de programación de propósito general de código del lado del servidor originalmente diseñado para el preprocesado de texto plano en UTF-8.",
+    "link": "https://www.w3schools.com/php/"
   }
 ]

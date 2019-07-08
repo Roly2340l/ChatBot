@@ -38,8 +38,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
-
-                            header("location: entrada.php");
+                            
+                            header("location: historia.html");
                         } else {
                             $error_password = "La contraseña es invalida";
                         }
@@ -54,7 +54,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         //mysqli_stmt_close($stmt);
     }
-
     mysqli_close($link);
 }
 ?>

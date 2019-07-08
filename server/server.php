@@ -1,6 +1,7 @@
 <?php
 require_once "configuracion.php";
 include 'data.php';
+include 'index.php';
 
 // datos del post
 if (!isset($_POST["area"])) $_POST["area"] = '';

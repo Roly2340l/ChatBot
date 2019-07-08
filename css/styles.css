@@ -1,5 +1,4 @@
 body {
-  /* background-color: rgb(106, 221, 246); */
   background-image: url("../images/space.jpg");
 }
 
@@ -63,7 +62,6 @@ textarea {
 
 #chat_box {
   width: 750px;
-  height: 400px;
   background: rgb(255, 255, 255);
   padding: 0px 30px;
   margin: 20px auto;
@@ -73,19 +71,6 @@ textarea {
   border-width: thick;
   overflow-x: hidden;
   overflow-y: scroll;
-}
-
-#caja {
-  width: 750px;
-  height: 430px;
-  background: rgb(255, 255, 255);
-  padding: 0px 30px;
-  margin: 20px auto;
-  font-size: 28px;
-  border-radius: 5%;
-  border-color: gray;
-  border-width: thick;
-  overflow-x: hidden;
 }
 
 #chat_bot {
